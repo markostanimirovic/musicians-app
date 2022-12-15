@@ -1,0 +1,8 @@
+<p *ngIf="musicians.length === 0">No Musicians Found.</p>
+
+<section class="card-container">
+  <article class="card" *ngFor="let musician of musicians">
+    <img [src]="musician.photoUrl" [alt]="musician.name + ' Photo'" />
+    <h3>{{ musician.name }}</h3>
+  </article>
+</section>
